@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Juego del Número Secreto: Intenta adivinar el número entre 1 y 10.">
+
+    <!-- Optimización de la carga de fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Enlace al archivo de estilos -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Juego del Número Secreto</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container__contenido">
+            <div class="container__informaciones">
+                <h1>¡Juego del Número Secreto!</h1>
+                <p class="texto__parrafo">Ingresa un número entre 1 y 10.</p>
+                <input type="number" id="valorUsuario" min="1" max="10" class="container__input"
+                    placeholder="Tu número">
+                <div class="container__botones">
+                    <button id="intentar" class="container__boton">Intentar</button>
+                    <button id="reiniciar" class="container__boton" disabled>Nuevo juego</button>
+                </div>
+            </div>
+            <img src="./img/ia.png" alt="Persona mirando a la izquierda" class="container__imagen-persona">
+        </div>
+    </div>
+
+    <!-- Enlace al archivo de script -->
+    <script src="app.js" defer></script>
+</body>
+
+</html>
